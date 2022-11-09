@@ -20,3 +20,5 @@ range of possible values for actions was 10x as large as the range of possible v
 targets. The increases in accuracy with increases in number of epochs was not significant for
 actions (97, 94) or targets (76, 70). This suggests that instead of more epochs, a more
 sophisticated model architecture might be a better way to improve accuracy.
+
+To run: python3 train.py --in_data_fn=lang_to_sem_data.json --model_output_dir=experiments/lstm --batch_size=1000 --num_epochs=3 --val_every=1 --force_cpu
